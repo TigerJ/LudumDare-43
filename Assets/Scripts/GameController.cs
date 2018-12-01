@@ -55,7 +55,6 @@ public class GameController : MonoBehaviour {
 
 
         //tale of fried frogs
-
         EventOption event1Option1 = createOption(0, 2, 0, 0, 1, 1, 0, "[press 1] You send in 2 hunters with guns, followed by 1 woman and 1 child to show your family situation. The child is holding a frog.");
         event1Option1.resolutions = new List<EventResolution>();
         event1Option1.resolutions.Add(createResolution(0, 2, 0, 0, 0, 0, 1, "The frog fixin dudes are impressed by your hunters outfits and your peaceful nature. They agree to join your party"));
@@ -65,7 +64,7 @@ public class GameController : MonoBehaviour {
         EventOption event1Option2 = createOption(4, 0, 0, 0, 0, 0, 0, "[press 2] 4 of your cooks are interested in the delicious smells that hang in the air.");
         event1Option2.resolutions = new List<EventResolution>();
         event1Option2.resolutions.Add(createResolution(-4, 0, 0, 0, 0, 0, 0, "Upon reaching the frog cooking camp, your cooks realize they have sumbled into a trap from a delerious escaped cannibal! All your cooks are eaten with sides of fried frogs."));
-        event1Option2.resolutions.Add(createResolution(2, 0, 0, 0, 0, 0, 0, "Your cooks meet their cooks, their cooks like your cooks, all the cooks spend a lot of time talking about different types of salts. the other cooks join your cooks to cook."));
+        event1Option2.resolutions.Add(createResolution(2, 0, 0, 0, 0, 0, 0, "Your cooks meet their cooks, their cooks like your cooks, all the cooks spend a lot of time talking about different types of salts. the other cooks(2) join your cooks to cook."));
         event1Option2.resolutions.Add(createResolution(-2, 0, 0, 0, 0, 0, 0, "The campsite is abonded.. After eating and sampling some of the fried frogs, two of your cooks die immediatly from choking on the delicious legs."));
 
         EventOption event1Option3 = createOption(0, 2, 0, 0, 0, 0, 2, "[press 3] 2 of your mounted hunters are sent to investigate");
@@ -76,7 +75,26 @@ public class GameController : MonoBehaviour {
 
         AddEvent("The sun was blazing hot down the wagons. As sweat beaded of the hats of the hunters and soaked the armpits of children, a large smokey campfire could be seen in the distance. The smell of deliciously fried frogs hung in the air and the stomachs of the women began to growl with the horses.", 0, 0, 0, 0, 0, 0, 0, event1Option1, event1Option2, event1Option3);
 
-        //
+        //water well
+        EventOption event2Option1 = createOption(0, 0, 0, 2, 0, 0, 5, "[press 1] Without any warning, 5 horses go charging towards the well!2 of the wranglers chase after them");
+        event2Option1.resolutions = new List<EventResolution>();
+        event2Option1.resolutions.Add(createResolution(0, 0, 0, 2, 0, 0, 5, "Without any warning, 5 horses go charging towards the well! 2 of the wranglers chase after them"));
+        event2Option1.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, -5, "The horses charge up and chug the water, suddenly they all fall over the water is tainted!! This probably explains why there is nobody around in the town. The frog ribbits out a laugh. 5 horses don't make it."));
+        event2Option1.resolutions.Add(createResolution(-2, -3, -2, 0, 0, 0, 0, "The horses charge up and chug the water, They drink the trough dry! Upon discovery, the well is also dry. You decide to let the women and children drink first. 3 Hunters, 2 Cooks, and 2 gatherers perish from dehydration."));
+
+        EventOption event2Option2 = createOption(0, 0, 5, 0, 0, 0, 0, "[press 2] You send 5 gatherers ahead of the train to handle any disorderly rush that might happen as everyone is thirsty and angry.They are thangry.");
+        event2Option2.resolutions = new List<EventResolution>();
+        event2Option2.resolutions.Add(createResolution(0, 0, 0, -3, -2, 0, -2, "As the gatherers start to head toward the fountain all other groups become unruly and fights begin breakout! The hunters shoot off several rounds during the scuffle. 3 wranglers, 2 women, and 2 horses do not survive the water rush. The frog ribbits out a laugh."));
+        event2Option2.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, 0, "The gatherers secure the water source and provide water to everyone.For once nothing bad happens!The frog winks at you from the bucket."));
+        event2Option2.resolutions.Add(createResolution(0, -2, 0, -2, -1, -2, 0, "The gatherers mis-identify the water as safe. 2 wranglers, 2 hunters, 1 woman, and 2 children perish from the tainted water."));
+
+        EventOption event2Option3 = createOption(0, 0, 0, 0, 0, 0, 0, "[press 3] Send the women(3) and children(6) first so that they can be quenched before the men and animals.");
+        event2Option3.resolutions = new List<EventResolution>();
+        event2Option3.resolutions.Add(createResolution(0, 0, 0, 0, -3, -6, 0, "This is one of those times when sending the gatherers might have been a better idea. Tragically the water was tainted and the women and children became deathly ill. The men dig holes for the 3 women and 6 children."));
+        event2Option3.resolutions.Add(createResolution(0, 0, 0, 0, -3, -6, 0, "At first, it seems everything is going perfectly until some doors begin to open around the town building nearby. One of the children looks up from the well as the frog jumps out of the bucket and down the water shaft. Limping slowly forward with a stagger on the other side of the well is something that is no longer recognizable as human. This is a ghoul town! The smell of death and decay is unbearable. The wagon train packs up at the sight of this horror and abandons anyone who was not ready to go. 3 women and 6 children were left to live (eternally as undead)."));
+        event2Option3.resolutions.Add(createResolution(3, 3, 0, 2, 0, 0, 0, "The women and children drink the water, elated the begin to sing and cheer! The noise is heard throughout the town. A few townspeople who were hiding from what they perceived as banditos come to greet the wagon train. 3 cooks, 2 wranglers, and 3 hunters join!"));
+
+        AddEvent("The entire wagon train is parched! Water is running dangerously low. Several oxen have all but given up, and the wranglers can barely keep them going. Over the next pass you spot a small town, as you enter the main street you do not hear any noise, and it is eerily quiet as nobody seems to be around. In the center of the town as you pass through you come upon a stone water well and old wooden trough. A giant fat frog sits halfway in the bucket used to gather water with a lazy look on his face.", 0, 0, 0, 0, 0, 0, 0, event2Option1, event2Option2, event2Option3);
     }
 
     // Update is called once per frame
@@ -212,7 +230,7 @@ public class GameController : MonoBehaviour {
     {
         eventing = true;
         List<GameEvent> possibleEvents = new List<GameEvent>();
-        possibleEvents = events.FindAll(gameEvent => gameEvent.mincooks <= cooks && gameEvent.minhunters <= hunters && gameEvent.mingatherers <= gatherers && gameEvent.minwranglers <= wranglers && gameEvent.minwomen <= women && gameEvent.minchildren <= children && gameEvent.minhorses <= horses);
+        possibleEvents = events.FindAll(gameEvent => gameEvent.mincooks <= cooks && gameEvent.minhunters <= hunters && gameEvent.mingatherers <= gatherers && gameEvent.minwranglers <= wranglers && gameEvent.minwomen <= women && gameEvent.minchildren <= children && gameEvent.minhorses <= horses && gameEvent != randomEvent);
         randomEvent = possibleEvents[Random.Range(0, possibleEvents.Count)];
 
         eventPanel.alpha = 1;

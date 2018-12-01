@@ -42,3 +42,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: map
+    uniqueID: 278422863
+    locked: 0
+  - name: path
+    uniqueID: 3683661779
+    locked: 0
+  - name: detail
+    uniqueID: 3553873279
+    locked: 0
+  - name: poi
+    uniqueID: 1643638071
+    locked: 0
+  - name: player
+    uniqueID: 365855727
+    locked: 0
+  - name: above
+    uniqueID: 3318501701
+    locked: 0

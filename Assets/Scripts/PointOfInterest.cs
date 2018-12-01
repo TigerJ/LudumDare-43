@@ -12,7 +12,7 @@ public class PointOfInterest : MonoBehaviour {
     }
     private void OnMouseDown()
     {
-        if(transform.position.x < player.transform.position.x && gameController.eventing == false)
+        if(transform.position.x < player.transform.position.x -1f && gameController.eventing == false)
         {
             gameController.hideEvent();
             player.setTarget(gameObject);
