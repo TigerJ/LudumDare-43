@@ -53,11 +53,14 @@ public class GameController : MonoBehaviour {
 
         events = new List<GameEvent>();
 
+
+        //tale of fried frogs
+
         EventOption event1Option1 = createOption(0, 2, 0, 0, 1, 1, 0, "[press 1] You send in 2 hunters with guns, followed by 1 woman and 1 child to show your family situation. The child is holding a frog.");
         event1Option1.resolutions = new List<EventResolution>();
         event1Option1.resolutions.Add(createResolution(0, 2, 0, 0, 0, 0, 1, "The frog fixin dudes are impressed by your hunters outfits and your peaceful nature. They agree to join your party"));
         event1Option1.resolutions.Add(createResolution(0, -2, 0, 0, 0, 0, 0, "Your hunters look menacing as they approach and accidently cath the good natured frog cookers off guard. Both your hunters are shot and killed. The woman and child flee back for safety."));
-        event1Option1.resolutions.Add(createResolution(0, 0, -2, 0, -1, -1, 0, "The frog food is so delicious, the woman and child decide to remain with the frog cookin' dudes. and settle in a nearby cave. The hunters also join to learn the art of giggin'"));
+        event1Option1.resolutions.Add(createResolution(0, -2, 0, 0, -1, -1, 0, "The frog food is so delicious, the woman and child decide to remain with the frog cookin' dudes. and settle in a nearby cave. The hunters also join to learn the art of giggin'"));
 
         EventOption event1Option2 = createOption(4, 0, 0, 0, 0, 0, 0, "[press 2] 4 of your cooks are interested in the delicious smells that hang in the air.");
         event1Option2.resolutions = new List<EventResolution>();
@@ -73,6 +76,7 @@ public class GameController : MonoBehaviour {
 
         AddEvent("The sun was blazing hot down the wagons. As sweat beaded of the hats of the hunters and soaked the armpits of children, a large smokey campfire could be seen in the distance. The smell of deliciously fried frogs hung in the air and the stomachs of the women began to growl with the horses.", 0, 0, 0, 0, 0, 0, 0, event1Option1, event1Option2, event1Option3);
 
+        //
     }
 
     // Update is called once per frame
