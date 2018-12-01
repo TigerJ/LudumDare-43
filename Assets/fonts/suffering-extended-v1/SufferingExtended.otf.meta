@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: fe9d53fce9860734392104ecd2980f57
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SufferingExtende
+  fontNames:
+  - SufferingExtende
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 420dbd66688a7bf4cb80bba4a67596de, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

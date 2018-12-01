@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: b96f4bb66f3bd674a84c1550c99809df
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SafeguardExtende
+  fontNames:
+  - SafeguardExtende
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b0cdd235eacfc6e41a7ac003a2d33465, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

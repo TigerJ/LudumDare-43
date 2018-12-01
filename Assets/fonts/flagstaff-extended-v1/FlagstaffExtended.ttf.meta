@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 635c4a8c164947949afd839c74636f1b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FlagstaffExtende
+  fontNames:
+  - FlagstaffExtende
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3f46d7185cd86a24fbb1b61f8d26c47d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
     GameObject target;
+    GameController gameController;
     bool startMove;
 	// Use this for initialization
 	void Start () {
-		
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
 	}
 	
 	// Update is called once per frame
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour {
         if (collision.tag == "poi")
         {
             startMove = false;
+            gameController.displayEvent();
         }
     }
     public void setTarget(GameObject gameObject)

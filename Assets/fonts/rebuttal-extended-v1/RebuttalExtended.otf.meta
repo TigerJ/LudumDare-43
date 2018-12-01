@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c175ca71fa2b86d48b34657acf9469bd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: RebuttalExtended
+  fontNames:
+  - RebuttalExtended
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2ee9a20a3cbb08149b24eb8e54753190, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

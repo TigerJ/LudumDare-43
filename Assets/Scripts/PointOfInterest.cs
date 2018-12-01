@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PointOfInterest : MonoBehaviour {
     Player player;
+    GameController gameController;
     private void Start()
     {
         player = GameObject.Find("Player").GetComponent<Player>();
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
     private void OnMouseDown()
     {
-        player.setTarget(gameObject);
+        if(transform.position.x < player.transform.position.x && gameController.eventing == false)
+        {
+            gameController.hideEvent();
+            player.setTarget(gameObject);
+
+        }
     }
 }
