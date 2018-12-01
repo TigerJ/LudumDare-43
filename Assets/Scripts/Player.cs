@@ -15,7 +15,6 @@ public class Player : MonoBehaviour {
 	void Update () {
         if (startMove == true)
         {
-            Debug.Log("start moving");
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position, .05f);
         }
 	}

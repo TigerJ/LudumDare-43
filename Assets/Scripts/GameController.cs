@@ -73,7 +73,6 @@ public class GameController : MonoBehaviour {
 	}
     void processChoice(int choice)
     {
-        Debug.Log(choice);
         eventing = false;
     }
     public void updateStat(int amount, string stat)

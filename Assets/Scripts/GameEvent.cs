@@ -4,25 +4,20 @@ using UnityEngine;
 
 public class GameEvent : ScriptableObject {
     public int mincooks;
-    public int maxcooks;
     public int minhunters;
-    public int maxhunters;
-    public int mingatherers;
-    public int maxgatherers;
+    public int mingatherers;    
     public int minwranglers;
-    public int maxwranglers;
     public int minwomen;
-    public int maxwomen;
     public int minchildren;
-    public int maxchildren;
     public int minhorses;
-    public int maxhorses;
+    
 
     public string description;
     public string minigameScene;//might not make it into the game
     public string option1;
     public string option2;
     public string option3;
+
 
 
     // Use this for initialization
