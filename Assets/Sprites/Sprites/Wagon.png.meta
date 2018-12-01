@@ -4,6 +4,10 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: Wagon 0
     21300002: Wagon 1
+    21300004: Wagon 2
+    21300006: Wagon 3
+    21300008: Wagon 4
+    21300010: Wagon 5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -62,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -79,6 +83,86 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 96
+        width: 96
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68877433d0dd5d498892cad02513417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wagon 1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab8ca359ae0ed74c89d6ab689fbc3d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wagon 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 96
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9e0831bf4a6be4dbdb568ea9ae5df1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wagon 3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 96
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240ec9ac3386ef34dbf4262208cf7e70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wagon 4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 96
         height: 32
@@ -89,17 +173,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d05a6159202ed0b4fbdf3e94121886a3
+      spriteID: dcca4213c71f4904fa45ac22ce5f131e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wagon 1
+      name: Wagon 5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 96
+        y: 32
         width: 96
         height: 32
       alignment: 7
@@ -109,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5940c710a0a295458cad7326eeb10e4
+      spriteID: 0dc4c981fba0d4f49b7549edaf182c76
       vertices: []
       indices: 
       edges: []

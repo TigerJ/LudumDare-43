@@ -15,7 +15,8 @@ public class Player : MonoBehaviour {
 	void Update () {
         if (startMove == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, .05f);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, .03f);
+            gameObject.GetComponent<Animator>().Play("move");
         }
 	}
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour {
         if (collision.tag == "poi")
         {
             startMove = false;
+            gameObject.GetComponent<Animator>().Play("idle");
             gameController.displayEvent();
         }
     }

@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour {
     public Text horsesText;
 
     public bool eventing;
-
+    public bool evented;
     List<GameEvent> events;
     GameEvent randomEvent;
     EventResolution randomResolution;
@@ -32,6 +32,7 @@ public class GameController : MonoBehaviour {
     Text eventOption2;
     Text eventOption3;
     Text eventResolution;
+    Text continueText;
 
     // Use this for initialization
     void Start () {
@@ -50,6 +51,7 @@ public class GameController : MonoBehaviour {
         eventOption1 = GameObject.Find("Option1").GetComponent<Text>();
         eventOption2 = GameObject.Find("Option2").GetComponent<Text>();
         eventOption3 = GameObject.Find("Option3").GetComponent<Text>();
+        continueText = GameObject.Find("Continue").GetComponent<Text>();
 
         events = new List<GameEvent>();
 
@@ -99,7 +101,7 @@ public class GameController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (eventing == true)
+        if (eventing == true && evented==false)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
@@ -112,6 +114,16 @@ public class GameController : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 processChoice(3);
+            }
+        }
+        else if(eventing == true && evented == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                continueText.text = "";
+                eventing = false;
+                evented = false;
+                hideEvent();
             }
         }
 	}
@@ -142,7 +154,8 @@ public class GameController : MonoBehaviour {
         eventOption2.text = "";
         eventOption3.text = "";
 
-        eventing = false;
+        evented = true;
+        continueText.text = "click anwhere to continue";
     }
     public void updateStat(int amount, string stat)
     {

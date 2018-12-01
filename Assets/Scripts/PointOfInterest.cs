@@ -16,7 +16,6 @@ public class PointOfInterest : MonoBehaviour {
         {
             gameController.hideEvent();
             player.setTarget(gameObject);
-
         }
     }
 }
