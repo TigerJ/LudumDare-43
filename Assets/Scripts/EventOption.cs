@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventResolution : ScriptableObject {
+public class EventOption : ScriptableObject {
 
     public int cooks;
     public int hunters;
@@ -12,6 +12,7 @@ public class EventResolution : ScriptableObject {
     public int children;
     public int horses;
 
-    public string resolutionText;
+    public string OptionText;
+    public List<EventResolution> resolutions;
 
 }

@@ -14,19 +14,8 @@ public class GameEvent : ScriptableObject {
 
     public string description;
     public string minigameScene;//might not make it into the game
-    public string option1;
-    public string option2;
-    public string option3;
+    public EventOption option1;
+    public EventOption option2;
+    public EventOption option3;
 
-
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
