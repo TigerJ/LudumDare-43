@@ -24,6 +24,7 @@ public class GameEvent : ScriptableObject {
     public string option2;
     public string option3;
 
+
     // Use this for initialization
     void Start () {
 		
