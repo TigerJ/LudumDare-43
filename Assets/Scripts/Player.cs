@@ -26,7 +26,7 @@ public class Player : MonoBehaviour {
         {
             startMove = false;
             gameObject.GetComponent<Animator>().Play("idle");
-            gameController.displayEvent();
+            if(collision.gameObject.name!="endpoi") gameController.displayEvent();
             GameObject[] babyWagons = GameObject.FindGameObjectsWithTag("BabyWagon");
             foreach (GameObject g in babyWagons)
             {
