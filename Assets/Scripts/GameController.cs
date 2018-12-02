@@ -138,17 +138,17 @@ public class GameController : MonoBehaviour {
         //The Cattle Man
         EventOption event4Option1 = createOption(0, 0, 0, 5, 0, 0, 0, "[Press 1] send 5 wranglers to help round up the cattle");
         event4Option1.resolutions = new List<EventResolution>();
-        event4Option1.resolutions.Add(createResolution(0, 0, 0, -5, 0, 0, 0, "Five wranglers in denim stand \rn Offering their helping hand \rn A smile and a nod, A look and a smack \rn The cattle ran em over and they ain't coming back"));
+        event4Option1.resolutions.Add(createResolution(0, 0, 0, -5, 0, 0, 0, "Five wranglers in denim stand  Offering their helping hand  A smile and a nod, A look and a smack  The cattle ran em over and they ain't coming back"));
 
         EventOption event4Option2 = createOption(0, 0, 0, 10, 0, 0, 0, "[Press 2] send 10 wranglers to help round up the cattle");
         event4Option2.resolutions = new List<EventResolution>();
-        event4Option2.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, 0, "Ten wranglers in denim stand \rn Offering their helping hand \rn A smile and a nod, A look and a Yell \rn These wrangler boys round'em up swell"));
+        event4Option2.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, 0, "Ten wranglers in denim stand  Offering their helping hand  A smile and a nod, A look and a Yell  These wrangler boys round'em up swell"));
 
         EventOption event4Option3 = createOption(0, 5, 0, 0, 0, 0, 0, "[Press 3] send 5 hunters to take the cattle from cattle man");
         event4Option3.resolutions = new List<EventResolution>();
-        event4Option3.resolutions.Add(createResolution(0, -5, 0, 0, 0, 0, 0, "Five hunters lock and load \rn All's fair on the open road \rn Taking aim, ready to fire \rn Cattle ran em over like a big truck tire"));
+        event4Option3.resolutions.Add(createResolution(0, -5, 0, 0, 0, 0, 0, "Five hunters lock and load  All's fair on the open road  Taking aim, ready to fire  Cattle ran em over like a big truck tire"));
 
-        AddEvent("Gather round the fire now and hear what I've to say \r It was a cold crisp Ludum Dare and the sky's was grey \r Ol' man TigerJ fiddled with his code \r Tryin ta squash bugs and add an extra toad \r The cattle man his newest \r re a noble NPC \r Led lots of steer around the land for all us to see \r He needed a wrangler man or 3, or 5, or 10 \r Before the wicked railways come an' ruin all the lan'", 0, 5, 0, 10, 0, 0, 0, event4Option1, event4Option2, event4Option3);
+        AddEvent("Gather round the fire now and hear what I've to say  It was a cold crisp Ludum Dare and the sky's was grey  Ol' man TigerJ fiddled with his code  Tryin ta squash bugs and add an extra toad  The cattle man his newest  re a noble NPC  Led lots of steer around the land for all us to see  He needed a wrangler man or 3, or 5, or 10  Before the wicked railways come an' ruin all the lan'", 0, 5, 0, 10, 0, 0, 0, event4Option1, event4Option2, event4Option3);
 
         //The Giant Frogs of Tucker Hill
         EventOption event5Option1 = createOption(0, 20, 0, 0, 0, 0, 0, "[press 1] Send all the hunters to start shooting!");
@@ -161,7 +161,7 @@ public class GameController : MonoBehaviour {
         event5Option2.resolutions.Add(createResolution(0, 0, 0, 0, -5, -10, 0, "The wranglers laugh at this idea, the hunters go in and put the frogs down. 5 women and 10 children get snacked on."));
         event5Option2.resolutions.Add(createResolution(0, 0, 0, -5, 0, 0, 0, "The wranglers rush in! They manage to capture one of the frogs and name it Eric Von BattleFrog. 5 wranglers lives are worth one frog in a bush."));
 
-        EventOption event5Option3 = createOption(10, 0, 0, 0, 0, 0, 0, "");
+        EventOption event5Option3 = createOption(10, 0, 0, 0, 0, 0, 0, "[press 3] Send the cooks! we're eating frogs tonight!");
         event5Option3.resolutions = new List<EventResolution>();
         event5Option3.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, 0, "The cooks are able to trick and lure the giant frog into a giant pot, The wagon train has a giant feast."));
         event5Option3.resolutions.Add(createResolution(-10, 0, 0, 0, 0, 0, 0, "The cooks look at the giant frog and start to run away, the frog, however, looks at them and decides to have a meal. (10 cooks are lost)"));
@@ -214,7 +214,7 @@ public class GameController : MonoBehaviour {
         event8Option3.resolutions = new List<EventResolution>();
         event8Option3.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, 0, "He thanks and blesses you"));
 
-        AddEvent("Frog, Frog, Frog! Ribbet-ribbet-ribbet-frog! Come here Come here, wait!I don't want to hurt you! I just want to make you kosher! \r \r You come across an odd man in an odd coat with a long beard who looks like he might also someday run a chocolate shop.After some conversations you find out is also headed out west!", 0, 0, 0, 0, 0, 0, 0, event8Option1, event8Option2, event8Option3);
+        AddEvent("Frog, Frog, Frog! Ribbet-ribbet-ribbet-frog! Come here Come here, wait! I don't want to hurt you! I just want to make you kosher!  You come across an odd man in an odd coat with a long beard who looks like he might also someday run a chocolate shop.After some conversations you find out is also headed out west!", 0, 0, 0, 0, 0, 0, 0, event8Option1, event8Option2, event8Option3);
     }
 
     // Update is called once per frame
