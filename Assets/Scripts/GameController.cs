@@ -41,6 +41,10 @@ public class GameController : MonoBehaviour {
     Text eventOption3;
     Text eventResolution;
     Text continueText;
+    public Text titleText;
+
+    Color clearColor = new Color(1, 1, 1, 0);
+    Color whiteColor = new Color(1, 1, 1, 1);
 
     // Use this for initialization
     void Start () {
@@ -83,7 +87,7 @@ public class GameController : MonoBehaviour {
         event1Option3.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, -2, "The cooks share their frogs with your hunters, they then become interested in your horses... very interested in them. Your hunters barely escape being eaten along with them."));
         event1Option3.resolutions.Add(createResolution(0, -2, 0, 0, 0, 0, -2, "The campsite is full of people who are VERY hungry. Your hunters and horses do not return."));
 
-        AddEvent("The sun was blazing hot down the wagons. As sweat beaded of the hats of the hunters and soaked the armpits of children, a large smokey campfire could be seen in the distance. The smell of deliciously fried frogs hung in the air and the stomachs of the women began to growl with the horses.", 0, 0, 0, 0, 0, 0, 0, event1Option1, event1Option2, event1Option3);
+        AddEvent("How to eat Fried Frogs", "The sun was blazing hot down the wagons. As sweat beaded of the hats of the hunters and soaked the armpits of children, a large smokey campfire could be seen in the distance. The smell of deliciously fried frogs hung in the air and the stomachs of the women began to growl with the horses.", 0, 0, 0, 0, 0, 0, 0, event1Option1, event1Option2, event1Option3);
 
         //water well
         EventOption event2Option1 = createOption(0, 0, 0, 2, 0, 0, 5, "[press 1] Without any warning, 5 horses go charging towards the well! 2 of the wranglers chase after them");
@@ -95,7 +99,7 @@ public class GameController : MonoBehaviour {
 
         event2Option1.resolutions.Add(createResolution(-2, -3, -2, 0, 0, 0, 0, "The horses charge up and chug the water, They drink the trough dry! Upon discovery, the well is also dry. You decide to let the women and children drink first. 3 Hunters, 2 Cooks, and 2 gatherers perish from dehydration."));
 
-        EventOption event2Option2 = createOption(0, 0, 5, 0, 0, 0, 0, "[press 2] You send 5 gatherers ahead of the train to handle any disorderly rush that might happen as everyone is thirsty and angry.They are thangry.");
+        EventOption event2Option2 = createOption(0, 0, 5, 0, 0, 0, 0, "[press 2] You send 5 gatherers ahead of the train to handle any disorderly rush that might happen as everyone is thirsty and angry.");
         event2Option2.resolutions = new List<EventResolution>();
         event2Option2.resolutions.Add(createResolution(0, 0, 0, -3, -2, 0, -2, "As the gatherers start to head toward the fountain all other groups become unruly and fights begin breakout! The hunters shoot off several rounds during the scuffle. 3 wranglers, 2 women, and 2 horses do not survive the water rush. The frog ribbits out a laugh."));
         event2Option2.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, 0, "The gatherers secure the water source and provide water to everyone.For once nothing bad happens!The frog winks at you from the bucket."));
@@ -107,7 +111,7 @@ public class GameController : MonoBehaviour {
         event2Option3.resolutions.Add(createResolution(0, 0, 0, 0, -3, -6, 0, "At first, it seems everything is going perfectly until some doors begin to open around the town building nearby. One of the children looks up from the well as the frog jumps out of the bucket and down the water shaft. Limping slowly forward with a stagger on the other side of the well is something that is no longer recognizable as human. This is a ghoul town! The smell of death and decay is unbearable. The wagon train packs up at the sight of this horror and abandons anyone who was not ready to go. 3 women and 6 children were left to live (eternally as undead)."));
         event2Option3.resolutions.Add(createResolution(3, 3, 0, 2, 0, 0, 0, "The women and children drink the water, elated the begin to sing and cheer! The noise is heard throughout the town. A few townspeople who were hiding from what they perceived as banditos come to greet the wagon train. 3 cooks, 2 wranglers, and 3 hunters join!"));
 
-        AddEvent("The entire wagon train is parched! Water is running dangerously low. Several oxen have all but given up, and the wranglers can barely keep them going. Over the next pass you spot a small town, as you enter the main street you do not hear any noise, and it is eerily quiet as nobody seems to be around. In the center of the town as you pass through you come upon a stone water well and old wooden trough. A giant fat frog sits halfway in the bucket used to gather water with a lazy look on his face.", 0, 0, 0, 0, 0, 0, 0, event2Option1, event2Option2, event2Option3);
+        AddEvent("Water Well of Hell", "The entire wagon train is parched! Water is running dangerously low. Several oxen have all but given up, and the wranglers can barely keep them going. Over the next pass you spot a small town, as you enter the main street you do not hear any noise, and it is eerily quiet as nobody seems to be around. In the center of the town as you pass through you come upon a stone water well and old wooden trough. A giant fat frog sits halfway in the bucket used to gather water with a lazy look on his face.", 0, 0, 0, 0, 0, 0, 0, event2Option1, event2Option2, event2Option3);
 
         //I heard a herd
         EventOption event3Option1 = createOption(0, 0, 0, 2, 0, 0, 5, "[press 1] muster 15 of your best wranglers to head out and investigate the noises in the distance and retrieve any animals they can capture.");
@@ -133,7 +137,7 @@ public class GameController : MonoBehaviour {
 
         event3Option3.resolutions.Add(createResolution(0,-5,0,-5,0,0,0, "The wranglers approach the herd of wild horses, as they get closer and closer to quietly catch them the hunters notice something isn't quite right. The ground underneath their feet is wet and deep, and sandy. What is it, that ain't exactly earth, and it ain't exactly land? \"QUICKSAND\" (5 wranglers and 5 hunters are lost)"));
 
-        AddEvent("The wagon train is stirred on a cold night as off in the distance the sound of stampeding animals grows louder and echoes off the nearby cliffs and mountains mixed with noises of frogs mating off in the distance. The smell of fear is in the air.", 0, 0, 0, 15, 0, 0, 0, event3Option1, event3Option2, event3Option3);
+        AddEvent("I Heard a Herd","The wagon train is stirred on a cold night as off in the distance the sound of stampeding animals grows louder and echoes off the nearby cliffs and mountains mixed with noises of frogs mating off in the distance. The smell of fear is in the air.", 0, 0, 0, 15, 0, 0, 0, event3Option1, event3Option2, event3Option3);
 
         //The Cattle Man
         EventOption event4Option1 = createOption(0, 0, 0, 5, 0, 0, 0, "[Press 1] send 5 wranglers to help round up the cattle");
@@ -148,7 +152,7 @@ public class GameController : MonoBehaviour {
         event4Option3.resolutions = new List<EventResolution>();
         event4Option3.resolutions.Add(createResolution(0, -5, 0, 0, 0, 0, 0, "Five hunters lock and load  All's fair on the open road  Taking aim, ready to fire  Cattle ran em over like a big truck tire"));
 
-        AddEvent("Gather round the fire now and hear what I've to say  It was a cold crisp Ludum Dare and the sky's was grey  Ol' man TigerJ fiddled with his code  Tryin ta squash bugs and add an extra toad  The cattle man his newest  re a noble NPC  Led lots of steer around the land for all us to see  He needed a wrangler man or 3, or 5, or 10  Before the wicked railways come an' ruin all the lan'", 0, 5, 0, 10, 0, 0, 0, event4Option1, event4Option2, event4Option3);
+        AddEvent("The Cattle Man","Gather round the fire now and hear what I've to say  It was a cold crisp Ludum Dare and the sky's was grey  Ol' man TigerJ fiddled with his code  Tryin ta squash bugs and add an extra toad  The cattle man his newest  re a noble NPC  Led lots of steer around the land for all us to see  He needed a wrangler man or 3, or 5, or 10  Before the wicked railways come an' ruin all the lan'", 0, 5, 0, 10, 0, 0, 0, event4Option1, event4Option2, event4Option3);
 
         //The Giant Frogs of Tucker Hill
         EventOption event5Option1 = createOption(0, 20, 0, 0, 0, 0, 0, "[press 1] Send all the hunters to start shooting!");
@@ -165,7 +169,7 @@ public class GameController : MonoBehaviour {
         event5Option3.resolutions = new List<EventResolution>();
         event5Option3.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, 0, "The cooks are able to trick and lure the giant frog into a giant pot, The wagon train has a giant feast."));
         event5Option3.resolutions.Add(createResolution(-10, 0, 0, 0, 0, 0, 0, "The cooks look at the giant frog and start to run away, the frog, however, looks at them and decides to have a meal. (10 cooks are lost)"));
-        AddEvent("A loud crash reverberates across the trail, looking back you see a wagon has been upended! Screams emanate from men, women, and children who are scattering like ants from a freshly kicked hill. From up over the now top of a wagon (what was once the side) a GIANT frog head peers over. Faster than you can blink it's ropelike tongue fires faster than a musket and wraps a small child for a snack. Like a bungee jumper who has just reached the end of their line, the child snaps back into the frog's mouth in one big gulp!", 10, 20, 0, 5, 0, 0, 0, event5Option1, event5Option2, event5Option3);
+        AddEvent("The Giant Frogs of Tucker Hill","A loud crash reverberates across the trail, looking back you see a wagon has been upended! Screams emanate from men, women, and children who are scattering like ants from a freshly kicked hill. From up over the now top of a wagon (what was once the side) a GIANT frog head peers over. Faster than you can blink it's ropelike tongue fires faster than a musket and wraps a small child for a snack. Like a bungee jumper who has just reached the end of their line, the child snaps back into the frog's mouth in one big gulp!", 10, 20, 0, 5, 0, 0, 0, event5Option1, event5Option2, event5Option3);
 
         //Frohdaggo
         EventOption event6Option1 = createOption(0, 0, 0, 10, 0, 0, 0, "[press 1] send 10 of the best wranglers to go win some gold!");
@@ -182,10 +186,10 @@ public class GameController : MonoBehaviour {
         event6Option3.resolutions = new List<EventResolution>();
         event6Option3.resolutions.Add(createResolution(0, 0, -10, 10, 0, 0, 0, "To everyone's jaw-dropping amazement, the gatherers are natural frog wranglers! who knew? Afterward, you decide these people are better as wranglers than picking nuts and berries. Sometimes you just need to give someone a chance! (lose 10 gatherers, gain 10 wranglers)"));
 
-        AddEvent("As you round the bend on one of the many precarious cliffsides the trail opens up to a plateau. Across the opening is sprawled a tent city that appears to have popped up overnight. Your wagon train is greeted with praise as you arrive and experience greetings from people that you are unable to recognize. After some discussions with various plateau folk, you find out that they are racing giant ridable frogs down the canyon!  They implore you to offer up some wranglers and impress them in their frog rodeo, the prize money is enough for every family in the wagon train to have no worries when they settle in out west!", 5, 0, 0, 10, 0, 5, 0, event6Option1, event6Option2, event6Option3);
+        AddEvent("Frohdaggo","As you round the bend on one of the many precarious cliffsides the trail opens up to a plateau. Across the opening is sprawled a tent city that appears to have popped up overnight. Your wagon train is greeted with praise as you arrive and experience greetings from people that you are unable to recognize. After some discussions with various plateau folk, you find out that they are racing giant ridable frogs down the canyon!  They implore you to offer up some wranglers and impress them in their frog rodeo, the prize money is enough for every family in the wagon train to have no worries when they settle out west!", 5, 0, 0, 10, 0, 5, 0, event6Option1, event6Option2, event6Option3);
 
         //Fickle Food
-        EventOption event7Option1 = createOption(0, 5, 5, 0, 0, 0, 0, "[press 1] send 5 gatherers and 5 hunters out yonder over the hill to see if there is any ranging beasts or vegetation to collect and bring back to camp.");
+        EventOption event7Option1 = createOption(0, 5, 5, 0, 0, 0, 0, "[press 1] send 5 gatherers and 5 hunters out yonder over the hill to see if there is any ranging beasts or vegetation to collect.");
         event7Option1.resolutions = new List<EventResolution>();
         event7Option1.resolutions.Add(createResolution(0, -10, -5, 0, 0, 0, -5, "They leave the camp and head over the hill to collect food. There are no noises and no sign of them after an hour. 5 more hunters on horseback go to search for them. Nobody returns back to camp. (10 hunters, 5 gatherers, 5 horses are all lost)"));
         event7Option1.resolutions.Add(createResolution(10, 10, 10, 10, 10, 10, 10, "You dispatch 5 gatherers and 5 hunters, surprisingly they run into another group of campers who decide to join you! (gain 10 of everything!)"));
@@ -199,7 +203,7 @@ public class GameController : MonoBehaviour {
         event7Option3.resolutions = new List<EventResolution>();
         event7Option3.resolutions.Add(createResolution(0, 5, 0, 5, 5, 5, 0, "The gatherers know what is edible, the cooks know what is delicious. They are met with great success and find many rare ingredients and exotic spices to use in a delicious feast. While cooking up a test batch some wondering nomads cannot resist the smell and join your party! (gain 5 hunters, 5 wranglers, 5 women, and 5 children)"));
 
-        AddEvent("The sun begins to set as you reach a good clearing to set up camp. After a while, some of your gatherers and hunters decide it might be a good idea to collect some rations and supplies from the nearby wilderness.", 0, 0, 0, 0, 0, 0, 0, event7Option1, event7Option2, event7Option3);
+        AddEvent("Fickle Food","The sun begins to set as you reach a good clearing to set up camp. After a while, some of your gatherers and hunters decide it might be a good idea to collect some rations and supplies from the nearby wilderness.", 0, 0, 0, 0, 0, 0, 0, event7Option1, event7Option2, event7Option3);
 
         //The Frisco Frog
         EventOption event8Option1 = createOption(0, 0, 0, 0, 0, 0, 0, "[press 1] Let him join");
@@ -214,13 +218,18 @@ public class GameController : MonoBehaviour {
         event8Option3.resolutions = new List<EventResolution>();
         event8Option3.resolutions.Add(createResolution(0, 0, 0, 0, 0, 0, 0, "He thanks and blesses you"));
 
-        AddEvent("Frog, Frog, Frog! Ribbet-ribbet-ribbet-frog! Come here Come here, wait! I don't want to hurt you! I just want to make you kosher!  You come across an odd man in an odd coat with a long beard who looks like he might also someday run a chocolate shop.After some conversations you find out is also headed out west!", 0, 0, 0, 0, 0, 0, 0, event8Option1, event8Option2, event8Option3);
+        AddEvent("The Frisco Frog","Frog, Frog, Frog! Ribbet-ribbet-ribbet-frog! Come here Come here, wait! I don't want to hurt you! I just want to make you kosher!  You come across an odd man in an odd coat with a long beard who looks like he might also someday run a chocolate shop.After some conversations you find out is also headed out west!", 0, 0, 0, 0, 0, 0, 0, event8Option1, event8Option2, event8Option3);
     }
 
     // Update is called once per frame
     void Update () {
         if (eventing == true && evented==false)
         {
+            GameObject[] choiceBG = GameObject.FindGameObjectsWithTag("ChoiceBG");
+            foreach (GameObject g in choiceBG)
+            {
+                g.GetComponent<Image>().color = whiteColor;
+            }
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 processChoice(1);
@@ -247,6 +256,11 @@ public class GameController : MonoBehaviour {
 	}
     void processChoice(int choice)
     {
+        GameObject[] choiceBG = GameObject.FindGameObjectsWithTag("ChoiceBG");
+        foreach(GameObject g in choiceBG)
+        {
+            g.GetComponent<Image>().color = clearColor;
+        }
         switch (choice)
         {
             case 1:
@@ -328,10 +342,10 @@ public class GameController : MonoBehaviour {
         return value.ToString("d3");
     }
 
-    void AddEvent(string description, int mincooks, int minhunters, int mingatherers, int minwranglers, int minwomen, int minchildren, int minhorses, EventOption option1, EventOption option2 , EventOption option3)
+    void AddEvent(string title, string description, int mincooks, int minhunters, int mingatherers, int minwranglers, int minwomen, int minchildren, int minhorses, EventOption option1, EventOption option2 , EventOption option3)
     {
         GameEvent newEvent = ScriptableObject.CreateInstance<GameEvent>();
-
+        newEvent.title = title;
         newEvent.description = description;
         newEvent.option1 = option1;
         newEvent.option2 = option2;
@@ -381,7 +395,7 @@ public class GameController : MonoBehaviour {
         eventPanel.alpha = 1;
         eventPanel.blocksRaycasts = true;
         eventPanel.interactable = true;
-
+        titleText.text = randomEvent.title;
         eventDescription.text = randomEvent.description;
         eventOption1.text = randomEvent.option1.OptionText;
         eventOption2.text = randomEvent.option2.OptionText;

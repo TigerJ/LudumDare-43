@@ -6,6 +6,7 @@ TagManager:
   tags:
   - poi
   - BabyWagon
+  - ChoiceBG
   layers:
   - Default
   - TransparentFX

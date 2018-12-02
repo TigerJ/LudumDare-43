@@ -10,8 +10,8 @@ public class GameEvent : ScriptableObject {
     public int minwomen;
     public int minchildren;
     public int minhorses;
-    
 
+    public string title;
     public string description;
     public string minigameScene;//might not make it into the game
     public EventOption option1;
