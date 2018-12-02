@@ -46,6 +46,9 @@ public class GameController : MonoBehaviour {
     Color clearColor = new Color(1, 1, 1, 0);
     Color whiteColor = new Color(1, 1, 1, 1);
 
+    public AudioSource money;
+    public AudioSource death;
+
     // Use this for initialization
     void Start () {
         updateStat(100, "cooks");
@@ -291,6 +294,8 @@ public class GameController : MonoBehaviour {
     }
     public void updateStat(int amount, string stat)
     {
+        if (amount > 0 && !money.isPlaying && amount != 100) money.Play();
+        if (amount < 0 && !death.isPlaying) death.Play();
         switch (stat)
         {
             case "cooks":
