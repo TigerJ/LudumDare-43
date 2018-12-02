@@ -17,12 +17,7 @@ public class Player : MonoBehaviour {
         {
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position, .03f);
             gameObject.GetComponent<Animator>().Play("move");
-            GameObject[] babyWagons = GameObject.FindGameObjectsWithTag("BabyWagon");
-            foreach(GameObject g in babyWagons)
-            {
-                g.GetComponent<BabyWagon>().startMove = true;
-                g.GetComponent<Animator>().Play("move");
-            }
+            
         }
 	}
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,7 +31,7 @@ public class Player : MonoBehaviour {
             foreach (GameObject g in babyWagons)
             {
                 g.GetComponent<BabyWagon>().startMove = false;
-                g.GetComponent<Animator>().Play("idle");
+                g.GetComponent<Animator>().Play("idle", 0, Random.Range(0f, 1f));
             }
         }
     }
@@ -44,5 +39,11 @@ public class Player : MonoBehaviour {
     {
         target = gameObject;
         startMove = true;
+        GameObject[] babyWagons = GameObject.FindGameObjectsWithTag("BabyWagon");
+        foreach (GameObject g in babyWagons)
+        {
+            g.GetComponent<BabyWagon>().startMove = true;
+            g.GetComponent<Animator>().Play("move", 0, Random.Range(0f, 1f));
+        }
     }
 }

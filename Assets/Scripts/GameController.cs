@@ -20,6 +20,14 @@ public class GameController : MonoBehaviour {
     public Text childrenText;
     public Text horsesText;
 
+    public StatChange cooksChange;
+    public StatChange huntersChange;
+    public StatChange gatherersChange;
+    public StatChange wranglersChange;
+    public StatChange womenChange;
+    public StatChange childrenChange;
+    public StatChange horsesChange;
+
     public bool eventing;
     public bool evented;
     List<GameEvent> events;
@@ -164,30 +172,44 @@ public class GameController : MonoBehaviour {
             case "cooks":
                 cooks = cooks + amount;
                 cooksText.text = pad3(cooks);
+                cooksChange.startStatChange(amount, "cooks");
+                
                 break;
             case "hunters":
                 hunters = hunters + amount;
                 huntersText.text = pad3(hunters);
+                huntersChange.startStatChange(amount, "hunters");
+                
                 break;
             case "gatherers":
                 gatherers = gatherers + amount;
                 gatherersText.text = pad3(gatherers);
+                gatherersChange.startStatChange(amount, "gatherers");
+                
                 break;
             case "wranglers":
                 wranglers = wranglers + amount;
                 wranglersText.text = pad3(wranglers);
+                wranglersChange.startStatChange(amount, "wranglers");
+                
                 break;
             case "women":
                 women = women + amount;
                 womenText.text = pad3(women);
+                womenChange.startStatChange(amount, "women");
+                
                 break;
             case "children":
                 children = children + amount;
                 childrenText.text = pad3(children);
+                childrenChange.startStatChange(amount, "children");
+                
                 break;
             case "horses":
                 horses = horses + amount;
                 horsesText.text = pad3(horses);
+                horsesChange.startStatChange(amount, "horses");
+
                 break;
         }
     }
